@@ -38,7 +38,7 @@
     $(function(){
         $('.btn-giant').click(function(){
             var action = $(this).data('action');
-            console.log(action);
+            $.get("led/" + action);
         });
     });
 </script>
