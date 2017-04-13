@@ -4,3 +4,7 @@
 # OS-specific
 .DS_Store
 Thumbs.db
+
+# Yarn modules
+/node_modules
+/static

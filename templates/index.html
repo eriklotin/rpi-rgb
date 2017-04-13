@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>RGB Led</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/static/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        .btn-giant {
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <hr />
+    <div class="row">
+        <button type="button" data-action="off" class="btn btn-default btn-giant col-lg-2 col-lg-offset-0">Off</button>
+        <button type="button" data-action="red" class="btn btn-danger btn-giant col-lg-2 col-lg-offset-1">Red</button>
+        <button type="button" data-action="green" class="btn btn-success btn-giant col-lg-2 col-lg-offset-1">Green</button>
+        <button type="button" data-action="blue" class="btn btn-primary btn-giant col-lg-2 col-lg-offset-1">Blue</button>
+    </div>
+    <hr />
+</div>
+
+
+<script src="/static/js/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.btn-giant').click(function(){
+            var action = $(this).data('action');
+            console.log(action);
+        });
+    });
+</script>
+
+</body>
+
+</html>
