@@ -7,4 +7,6 @@ Thumbs.db
 
 # Yarn modules
 /node_modules
+
+# Generated assets
 /static
